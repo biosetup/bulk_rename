@@ -3,6 +3,17 @@
 ## Help
 ```bash
 python bulk_rename.py -h
+
+usage: bulk_rename [-h] [-p PATH] [-r REGEX] [-n NEW] [-a]
+
+Bulk File Rename
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -p PATH     Path to the folder with files to be renamed
+  -r REGEX    Regular Expression
+  -n NEW      Replace string
+  -a          Apply changes
 ```
 
 ## RegEx Documentation
