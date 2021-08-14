@@ -3,7 +3,7 @@ import os
 import re
 from os.path import isfile, join
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser("bulk_rename", description="Bulk File Rename")
 parser.add_argument('-p', dest='path', help='Path to the folder with files to be renamed', default=".")
 parser.add_argument('-r', dest='regex', help='Regular Expression', default="")
 parser.add_argument('-n', dest='new', help='Replace string', default="")
