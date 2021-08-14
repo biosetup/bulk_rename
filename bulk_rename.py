@@ -14,8 +14,8 @@ args = parser.parse_args()
 def main():
     for file_name in os.listdir(args.path):
         if isfile(join(args.path, file_name)):
-            p = re.compile(args.regex)
-            new_file_name = re.sub(p, args.new, file_name)
+            regex = re.compile(args.regex)
+            new_file_name = re.sub(regex, args.new, file_name)
             if file_name != new_file_name:
                 print(f"origin: {file_name}\t\tnew_file_name: {new_file_name}")
                 if args.apply:
